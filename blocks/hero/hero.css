@@ -1,20 +1,34 @@
-
-.testblock {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(90deg, #061a2b 0%, #0b364f 100%);
-    padding: 20px;
-    color: white;
+main .hero-container > div {
+  max-width: unset;
 }
 
-.testblock h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin: 0;
+main .hero-container {
+  padding: 0;
 }
 
-.testblock picture img {
-    max-width: 100%;
-    height: auto;
+.hero {
+  position: relative;
+  padding: 32px;
+  min-height: 300px;
+}
+
+.hero h1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.hero picture {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
