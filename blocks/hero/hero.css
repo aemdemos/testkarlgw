@@ -1,34 +1,34 @@
-main .hero-container > div {
-  max-width: unset;
-}
 
-main .hero-container {
-  padding: 0;
-}
-
-.hero {
+.testblock {
   position: relative;
-  padding: 32px;
-  min-height: 300px;
-}
-
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
   width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: #001a33; /* dark blue background similar to the image */
+}
+
+.testblock .hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.testblock img {
+  height: 100%;
+  width: auto;
+}
+
+.testblock .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  z-index: 10;
 }
